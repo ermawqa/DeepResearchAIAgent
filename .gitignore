@@ -41,17 +41,3 @@ bin/
 ### Mac OS ###
 .DS_Store
 
-# Kotlin build
-/build/
-.gradle/
-.idea/
-*.iml
-
-# OS/system files
-.DS_Store
-
-# Kotlin logs
-*.log
-
-# Secrets file
-src/main/kotlin/Secrets.kt
