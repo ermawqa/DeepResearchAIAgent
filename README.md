@@ -107,7 +107,7 @@ A truly “deep research” agent goes beyond surface-level summarization. While
 - Understands context, not just keywords
 - Connects multiple sources to identify underlying patterns, contradictions, or trends
 - Can generate structured insights, not just rephrased content
-- Has some form of memory or multi-step reasoning, allowing it to refine its responses based on previous queries or subtasks
+- Has some form of memory or multistep reasoning, allowing it to refine its responses based on previous queries or subtasks
 
 In short, a deep research agent behaves more like a junior researcher than a search tool.
 
@@ -118,7 +118,7 @@ I’d use a mix of quantitative and qualitative metrics:
 - Relevance: Does the answer directly address the question?
 - Depth: Does it go beyond obvious facts? Are multiple perspectives included?
 - Coherence: Is the information well-structured and logically organized?
-- Novelty: Did the agent surface insights or relationships I didn’t expect?
+- Novelty: Did the agent surface insights or relationships I didn't expect?
 - Trustworthiness: Does it cite or imply reliable sources?
 
 ### **3. Describe a scenario where your agent would likely fail or struggle.**
