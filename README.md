@@ -1,7 +1,7 @@
 # Task #1:
 
 - Theme: **Deep Research Agent — Kotlin Implementation**
-- YouTube video: Link
+- My YouTube video with a brief explanation: [Link]
 - **What It Does:** This is a **Kotlin-based Deep Research Agent** that:
     - Accepts a research query
     - Sends the query to OpenAI’s ChatGPT (gpt-3.5-turbo) via their API
