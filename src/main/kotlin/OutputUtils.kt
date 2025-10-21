@@ -16,3 +16,8 @@ fun toJsonFormat(query: String, result: String): String {
     )
     return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(output)
 }
+
+//fun saveToMarkdown(content: String, filename: String = "research_output.md") {
+//    val file = File(filename)
+//    file.writeText(content)
+//}

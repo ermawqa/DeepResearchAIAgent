@@ -33,7 +33,7 @@ class OpenAIClient {
 
         client.newCall(request).execute().use { response ->
             val responseBody = response.body?.string() ?: return "No response"
-//            println("🔴 Raw response: $responseBody")
+//          println("🔴 Raw response: $responseBody")
 
             val json = mapper.readTree(responseBody)
             val choices = json["choices"]
