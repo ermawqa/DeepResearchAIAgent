@@ -53,7 +53,7 @@
         And it will prompt:
         
         ```kotlin
-        ❓ No query provided. Please enter your research question:
+          No query provided. Please enter your research question:
         ```
 
 

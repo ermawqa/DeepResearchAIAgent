@@ -14,16 +14,16 @@ fun main(args: Array<String>) {
     }
 
     if (query == null) {
-        println("❓ No query provided. Please enter your research question:")
+        println("No query provided. Please enter your research question:")
         query = readlnOrNull()
     }
 
     if (query.isNullOrBlank()) {
-        println("⚠️ No input received. Exiting.")
+        println("No input received. Exiting.")
         return
     }
 
-    println("🔍 Running research on: \"$query\" (format: $format)")
+    println("Running research on: \"$query\" (format: $format)")
 
     val result = agent.runResearch(query!!)
 
@@ -32,7 +32,7 @@ fun main(args: Array<String>) {
         "json" -> saveToFile(toJsonFormat(query!!, result), "research_output.json")
         "raw" -> println(result)
         else -> {
-            println("⚠️ Unknown format '$format'. Showing raw output:")
+            println("Unknown format '$format'. Showing raw output:")
             println(result)
         }
     }
