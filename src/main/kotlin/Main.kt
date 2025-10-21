@@ -5,7 +5,7 @@ fun main(args: Array<String>) {
     var query: String? = null
     var format = "markdown"
 
-    // simple manual CLI argument parsing
+    // simple manual CLI argument parsingg
     args.forEachIndexed { index, arg ->
         when (arg) {
             "--query" -> query = args.getOrNull(index + 1)
