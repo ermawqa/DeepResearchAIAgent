@@ -129,7 +129,6 @@ So, it would likely fail in:
 
 - Real-time fact-checking, e.g. “What did the IMF announce yesterday?”
 - Highly specialized domains, like legal or medical texts, where citations and accuracy are critical
-- Multi-hop reasoning tasks, like comparing multiple academic models over time
 
 Also, if the query is ambiguous or lacks context, the LLM might generate a generic or hallucinated response.
 
@@ -152,7 +151,3 @@ If I had more time or resources, I would:
 - Add multi-format export
 
   Let users export results in Markdown, JSON, PDF, or even slide format.
-
-- Implement an evaluation layer
-
-  Let the agent “self-evaluate” or compare its own output against defined metrics or test queries.
