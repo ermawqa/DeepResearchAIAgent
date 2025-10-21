@@ -1,7 +1,6 @@
 # Task #1:
 
 - Theme: **Deep Research Agent — Kotlin Implementation**
-- Full code available at: [GitHub Link](https://github.com/ermawqa/DeepResearchAIAgent.git)
 - YouTube video: Link
 - **What It Does:** This is a **Kotlin-based Deep Research Agent** that:
     - Accepts a research query
@@ -60,7 +59,7 @@
 
 **Output Formats**
 
-```kotlin
+```
 	•	--format raw → prints output to console
 	•	--format markdown → saves to research_output.md
 	•	--format json → saves to research_output.json
@@ -68,7 +67,7 @@
 
 **Example Output (Markdown)**
 
-```kotlin
+```
 ## Key Concepts
 - LangChain is a framework for chaining LLMs with external tools and memory.
 
