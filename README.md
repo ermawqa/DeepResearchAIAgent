@@ -87,8 +87,7 @@
 
 - **Agent Architecture**
     - OpenAIClient.kt — sends requests to the API
-    - ResearchAgent.kt — core logic for running queries
-    - PromptBuilder.kt — prompt template for deep research
+    - ResearchAgent.kt — core logic for running queries and prompt template for deep research
     - Main.kt — handles CLI, output options, and execution
     - OutputUtils.kt — handles saving to file
 
