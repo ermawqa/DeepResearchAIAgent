@@ -104,24 +104,22 @@
 
 A truly “deep research” agent goes beyond surface-level summarization. While a simple agent might just retrieve top links and summarize them, a deep research agent:
 
-- **Understands context**, not just keywords
-- **Connects multiple sources** to identify underlying patterns, contradictions, or trends
-- Can **generate structured insights**, not just rephrased content
-- Has some form of **memory or multi-step reasoning**, allowing it to refine its responses based on previous queries or subtasks
+- Understands context, not just keywords
+- Connects multiple sources to identify underlying patterns, contradictions, or trends
+- Can generate structured insights, not just rephrased content
+- Has some form of memory or multi-step reasoning, allowing it to refine its responses based on previous queries or subtasks
 
-In short, a deep research agent behaves more like a **junior researcher** than a search tool.
+In short, a deep research agent behaves more like a junior researcher than a search tool.
 
 ### **2. If you were to evaluate a research agent like this, how would you approach measuring its quality and effectiveness?**
 
-I’d use a mix of **quantitative and qualitative metrics**:
+I’d use a mix of quantitative and qualitative metrics:
 
-- **Relevance**: Does the answer directly address the question?
-- **Depth**: Does it go beyond obvious facts? Are multiple perspectives included?
-- **Coherence**: Is the information well-structured and logically organized?
-- **Novelty**: Did the agent surface insights or relationships I didn’t expect?
-- **Trustworthiness**: Does it cite or imply reliable sources?
-
-Optionally, I’d also look at **user satisfaction** and **repeat usage** as longer-term indicators.
+- Relevance: Does the answer directly address the question?
+- Depth: Does it go beyond obvious facts? Are multiple perspectives included?
+- Coherence: Is the information well-structured and logically organized?
+- Novelty: Did the agent surface insights or relationships I didn’t expect?
+- Trustworthiness: Does it cite or imply reliable sources?
 
 ### **3. Describe a scenario where your agent would likely fail or struggle.**
 
@@ -129,32 +127,32 @@ Right now, my agent relies only on OpenAI’s LLM with no real-time access to th
 
 So, it would likely fail in:
 
-- **Real-time fact-checking**, e.g. “What did the IMF announce yesterday?”
-- **Highly specialized domains**, like legal or medical texts, where citations and accuracy are critical
-- **Multi-hop reasoning tasks**, like comparing multiple academic models over time
+- Real-time fact-checking, e.g. “What did the IMF announce yesterday?”
+- Highly specialized domains, like legal or medical texts, where citations and accuracy are critical
+- Multi-hop reasoning tasks, like comparing multiple academic models over time
 
-Also, if the query is **ambiguous** or lacks context, the LLM might generate a generic or hallucinated response.
+Also, if the query is ambiguous or lacks context, the LLM might generate a generic or hallucinated response.
 
 ### **4. What features or capabilities would you add to enhance your agent and make it work better?**
 
 If I had more time or resources, I would:
 
-- **Add retrieval-augmented generation (RAG)**
+- Add retrieval-augmented generation (RAG)
 
   Combine the LLM with a real-time web search or academic corpus to ground responses.
 
-- **Introduce memory or conversation context**
+- Introduce memory or conversation context
 
   So the agent can track previous questions and refine answers in follow-ups.
 
-- **Output citation support**
+- Output citation support
 
   Show where key insights came from (via link, title, or DOI), like a bibliography.
 
-- **Add multi-format export**
+- Add multi-format export
 
   Let users export results in Markdown, JSON, PDF, or even slide format.
 
-- **Implement an evaluation layer**
+- Implement an evaluation layer
 
   Let the agent “self-evaluate” or compare its own output against defined metrics or test queries.
