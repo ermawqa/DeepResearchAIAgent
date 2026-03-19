@@ -30,21 +30,36 @@ This separation ensures maintainability and extensibility.
 
 ## Running the Application
 
-Set API key:
+Set your OpenAI API key as an environment variable before running:
 
-```bash
-export OPENAI_API_KEY="your-key"
-```
-Run:
-```
-./gradlew run --args="--query 'Explain LangChain' --format markdown"
-```
+`export OPENAI_API_KEY="sk-your-api-key-here"`
+Or on Windows PowerShell, use:
 
----
+`setx OPENAI_API_KEY "sk-your-api-key-here"`
+Run the application:
 
-## Example output (keep one clean example)
+`./gradlew run`
+Your code automatically reads the key from the environment:
 
-Good as you already have — just shorten.
+`object Secrets {
+val OPENAI_API_KEY = System.getenv("OPENAI_API_KEY") ?: "MISSING_KEY"
+}`
+If the variable is not set, it will print "MISSING_KEY" and fail safely.
+
+Run via terminal with command-line arguments:
+
+`./gradlew run --args="--query 'Explain LangChain' --format markdown"`
+Or just run:
+
+`./gradlew run`
+And it will prompt:
+
+  `No query provided. Please enter your research question:`
+Output Formats
+
+	•	--format raw → prints output to console
+	•	--format markdown → saves to research_output.md
+	•	--format json → saves to research_output.json
 
 ---
 
