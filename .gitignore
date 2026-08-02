@@ -1,43 +1,49 @@
-.gradle
+### Gradle / Kotlin ###
+.gradle/
 build/
+.kotlin/
+# The wrapper JAR is intentionally committed — it is how ./gradlew bootstraps.
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
+### Generated reports ###
+# Default output destinations — curated samples live in examples/ instead.
+research_output.md
+research_output.json
+
+### Secrets & machine-local config ###
+.env
+.env.local
+*.pem
+local.properties
+.claude/settings.local.json
+
+### IDE ###
+.idea/
 *.iml
+*.iws
 *.ipr
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+.vscode/
+*.swp
 
-### Eclipse ###
+### Eclipse / NetBeans ###
 .apt_generated
 .classpath
 .factorypath
 .project
 .settings
-.springBeans
-.sts4-cache
 bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-### NetBeans ###
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
 
-### VS Code ###
-.vscode/
+### JVM crash logs ###
+hs_err_pid*.log
+replay_pid*.log
+.attach_pid*
 
-### Mac OS ###
+### OS ###
 .DS_Store
-
+Thumbs.db
